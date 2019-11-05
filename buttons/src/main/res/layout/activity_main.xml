@@ -19,14 +19,15 @@
         >
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/lke"
+            style="@android:style/Widget.Material.Light.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/like"
-            />
+            android:text="@string/like" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/disl"
+            style="@android:style/Widget.Material.Button.Inset"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#2196F3"
