@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">buttons</string>
+    <string name="dislike">dislike</string>
+    <string name="go_to_sleep">go to sleep</string>
+    <string name="like">like</string>
 </resources>
