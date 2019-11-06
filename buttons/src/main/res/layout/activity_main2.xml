@@ -6,4 +6,84 @@
     android:layout_height="match_parent"
     tools:context=".Main2Activity">
 
+    <EditText
+        android:id="@+id/passw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="passowrd"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login" />
+
+    <EditText
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="84dp"
+        android:ems="10"
+        android:hint="login"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/genderSelector"
+        android:layout_width="174dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="376dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/itRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Not sure" />
+
+        <RadioButton
+            android:id="@+id/maleRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/femaleRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Female" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="257dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="24dp"
+        android:editable="false"
+        android:rotation="-23"
+        android:shadowColor="#CA130E0E"
+        android:shadowDx="15"
+        android:shadowDy="15"
+        android:shadowRadius="10"
+        android:text="Select your gender"
+        android:textColor="#04F833"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/genderSelector"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/passwVerify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintStart_toEndOf="@+id/passw"
+        app:layout_constraintTop_toBottomOf="@+id/login" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
