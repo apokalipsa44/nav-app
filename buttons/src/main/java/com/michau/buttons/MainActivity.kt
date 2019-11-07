@@ -5,6 +5,8 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+
+
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -31,5 +33,18 @@ class MainActivity : AppCompatActivity() {
 
 
         }
+    }
+
+    override fun onResume() {
+        super.onResume()
+
+        if (intent.hasExtra("selectedGender")){
+
+            val message = intent.getStringExtra("selectedGender")
+            println(message)
+            gender.setText(message)
+
+        }
+
     }
 }

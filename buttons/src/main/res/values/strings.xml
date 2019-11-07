@@ -3,4 +3,5 @@
     <string name="dislike">dislike</string>
     <string name="go_to_sleep">go to sleep</string>
     <string name="like">like</string>
+    <string name="textview">TextView</string>
 </resources>

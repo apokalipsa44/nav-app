@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="24dp"
         android:ems="10"
         android:hint="login"
         android:inputType="textPersonName"
@@ -34,10 +34,9 @@
         android:id="@+id/genderSelector"
         android:layout_width="174dp"
         android:layout_height="123dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="376dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_editor_absoluteX="62dp">
 
         <RadioButton
             android:id="@+id/itRadio"
@@ -62,8 +61,7 @@
         android:id="@+id/textView"
         android:layout_width="257dp"
         android:layout_height="66dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginStart="16dp"
         android:editable="false"
         android:rotation="-23"
         android:shadowColor="#CA130E0E"
@@ -74,8 +72,8 @@
         android:textColor="#04F833"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/genderSelector"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passw" />
 
     <TextView
         android:id="@+id/passwVerify"
@@ -85,5 +83,54 @@
         android:layout_marginTop="64dp"
         app:layout_constraintStart_toEndOf="@+id/passw"
         app:layout_constraintTop_toBottomOf="@+id/login" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/genderSelector" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+    <TextView
+        android:id="@+id/kumam_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:text="kumam"
+        android:textSize="16dp"
+        app:layout_constraintStart_toEndOf="@+id/checkBox"
+        app:layout_constraintTop_toBottomOf="@+id/genderSelector" />
+
+    <TextView
+        android:id="@+id/spam_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="chce  spamu"
+        android:textSize="16dp"
+        app:layout_constraintStart_toEndOf="@+id/checkBox2"
+        app:layout_constraintTop_toBottomOf="@+id/kumam_text" />
+
+    <Button
+        android:id="@+id/zapisz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="260dp"
+        android:onClick="getUserData"
+        android:text="baton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spam_text" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
