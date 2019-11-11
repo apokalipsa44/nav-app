@@ -1,2 +1,2 @@
-include ':app', ':buttons'
+include ':app', ':buttons', ':recyclerviewapp'
 rootProject.name='Nav-app'
